@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Guilty PlAESures MP3 Encryption</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    </style>
+  </head>
+  <body style="background-color:violet;">
+  
+    <div align="center">
+      <h1><font face="Great Vibes" size="28">Welcome</font></h1>
+      <img src="guiltyLogo_v2.png" alt="Guilty Logo" width="300">
+    </div>
+    
+    <div id="encrypt" align="center">
+      <h2><font face="Great Vibes" size="12">Encryption</font></h2>
+      <form action="guiltyprocess" method="post" enctype="multipart/form-data">
+        MP3 File:
+        <input type="file" id="mp3file" name="mp3file"><br>
+        <!--  Key Length:
+        <input type="radio" name="length" value="128">128
+        <input type="radio" name="length" value="256">256-->
+        <input type="submit" value="Encrypt">
+      </form>
+    </div>
+      
+    <div id="decrypt" align="center">
+      <h2><font face="Great Vibes" size="12">Decryption</font></h2>
+      <form action="guiltyprocess" method="get">
+        Decryption Key:
+        <input type="text" id="key" name="decryption key"><br>
+        Ciphertext:
+        <input type="text" id="cipertext" name="ciphertext"><br>
+        <input type="submit" value="Decrypt">
+      </form>
+    </div>
+
+  </body>
+</html>
